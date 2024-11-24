@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    let num = Number(prompt('enter number')) ;
+    let l=Number(String(num).length);
+    let sum = 0;
+    let res=num;
+    while (num != 0) {
+        let ld = num % 10;
+        sum+=ld**l
+        num = Math.trunc(num / 10);
+        --l
+        
+    }
+    if (sum === res )
+    { console.log('disarm')
+    }
+    else
+    {console.log('not')}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

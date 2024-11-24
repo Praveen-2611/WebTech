@@ -1,0 +1,40 @@
+<html> 
+    <head>
+        <h1>Welcome To JavaScript..!!! </h1>
+        <script> 
+            MeterBill();
+            function MeterBill()
+            {
+                let Units = Number(prompt('Enter No Of Units : '));
+                if (Units<200)
+                {
+                    console.log('No Bill Generated');
+                }
+                
+                else 
+                {
+                    if (201<=Units<=250)
+                    {
+                        console.log(Units-200*(3));
+                    }
+                    if (251<=Units<=300)
+                        {
+                            console.log(((Units-250)*5) + (50*3));
+                        }
+                
+                    if (Units > 301)
+                    {
+                        Units -= 300;
+                        console.log(Units*7);
+                    }
+                }
+                
+            }
+        </script>
+    </head>
+    <body> 
+        <p> 
+            <h2> Welcome Note...!!!</h2>
+        </p>
+    </body>
+</html>

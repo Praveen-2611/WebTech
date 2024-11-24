@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+            border: 5px solid aquamarine;
+            background-color: rgb(159, 228, 75);
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-template-rows:repeat(3,auto);
+            grid-row-gap: 5px;
+            grid-column-gap: 5px;
+            height: 300px;
+        }
+        .child{
+            background-color: blue;
+        }
+        .one{
+            grid-column: 1/3;
+            grid-row: 1/4;
+        }
+        .three{
+            grid-column: 3/6;
+            grid-column: 2/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child one">one</div>
+        <div class="child two">two</div>
+        <div class="child three">three</div>
+        <div class="child four">four</div>
+        <div class="child five">five</div>
+        <div class="child six">six</div>
+        <div class="child seven">seven</div>
+        <div class="child eight">eight</div>
+        <div class="child nine">nine</div>
+
+    </div>
+    
+</body>
+</html>

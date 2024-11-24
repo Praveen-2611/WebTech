@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #one
+    {
+        background-color: sandybrown;
+    }
+</style>
+<body>
+    <nav>
+           <h1 id="one">Amazon</h1>
+    </nav>
+    <div>
+        <h1>Cart Model:-</h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit.Magni, maxime explicabo illum odit 
+        dolorum impedit aut totam esse laudantium, laborum 
+        tempore assumenda, quae ipsa consectetur quas! Delectus 
+        alias optio quis, natus saepe quos sunt quia odit a repellat 
+        soluta ut illo quo exercitationem sint ea numquam impedit minus.</p>
+        <button>Check Out</button>
+        <table width=100% border="3px">
+            <tr>
+                <th>pid</th>
+                <th>pimg</th>
+                <th>pname</th>
+                <th>price</th>
+                <th>qty</th>
+                <th>totalprice</th>
+            </tr>
+            <tr align="center">
+                <td>1</td>
+                <td><img src="../../../Bootstrap/images/images/bags.webp"  width="40px" height="40px"></td>
+                <td>Bag</td>
+                <td>2000.0</td>
+                <td>
+                    <button onclick="decfn()">-</button>
+                    <span id="qty">1</span>
+                    <button onclick="incfn()">+</button>
+                </td>
+                <td>2000.0</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function decfn() {
+            let qtyElem = document.getElementById('qty');
+            let qty = qtyElem.textContent;
+            if (qty > 1) {
+                qty--;
+                qtyElem.textContent = qty;
+            }
+        }
+
+        function incfn() {
+            let qtyElem = document.getElementById('qty');
+            let qty = qtyElem.textContent;
+            qty++;
+            qtyElem.textContent = qty;
+            
+        }
+    </script>
+</body>
+</html>

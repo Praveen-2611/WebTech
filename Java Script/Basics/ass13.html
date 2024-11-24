@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    let Amount = (prompt("Enter the Currency Amount: "));
+let dup = Amount
+let A2000  = 2000;
+let A500  = 500;
+let A200 = 200;
+let A100  = 100;
+let A50 = 50;
+let A20= 20;
+let A10 = 10;
+let A5=5;
+let A2=2;
+let A1=1;
+let Notes2000= (Math.trunc(Amount/A2000)); 
+ Amount -= (2000*Notes2000)
+let Notes500 = (Math.trunc(Amount/A500)); 
+Amount-=(500* Notes500);
+let Notes200 = (Math.trunc (Amount/A200));
+Amount-= (200*Notes200);
+let Notes100= (Math.trunc(Amount/A100));  
+Amount-=(100*Notes100);
+let Notes50= (Math.trunc(Amount/A50));  
+Amount-=(50*Notes50);
+let Notes20= (Math.trunc(Amount/A20));  
+Amount-=(20*Notes20);
+let Notes10= (Math.trunc(Amount/A10));  
+Amount-=(10*Notes10);
+let Notes5= (Math.trunc(Amount/A5));  
+Amount-=(5*Notes5);
+let Notes2= (Math.trunc(Amount/A2));  
+Amount-=(2*Notes2);
+let Notes1= (Math.trunc(Amount/A1));  
+Amount-=(1*Notes1);
+console.log(`Total Amount = ${dup}`);
+if (A2000*Notes2000>0) 
+console.log(`${A2000}*${Notes2000}= ${A2000*Notes2000}`);
+if (A500* Notes500>0)
+{
+console.log(`${A500}*${Notes500} =${A500 * Notes500}`);
+}
+if (A200* Notes200>0)
+{
+console.log(`${A200}*${Notes200} =${A200 * Notes200}`);
+}
+if (A100* Notes100>0)
+{
+console.log(`${A100}*${Notes100} =${A100 * Notes100}`);
+}
+if (A50* Notes50>0)
+{
+console.log(`${A50}*${Notes50} =${A50 * Notes50}`);
+}
+if (A20* Notes20>0)
+{
+console.log(`${A20}*${Notes20} =${A20* Notes20}`);
+}
+if (A10* Notes10>0)
+{
+console.log(`${A10}*${Notes10} =${A10 * Notes10}`);
+}
+if (A5* Notes5>0)
+{
+console.log(`${A5}*${Notes5} =${A5* Notes5}`);
+}
+if (A2* Notes2>0)
+{
+console.log(`${A2}*${Notes2} =${A2* Notes2}`);
+}
+if (A1* Notes1>0)
+{
+console.log(`${A1}*${Notes1} =${A1* Notes1}`);
+}
+   
+</script>
+    
+</head>
+<body>
+    
+</body>
+</html>

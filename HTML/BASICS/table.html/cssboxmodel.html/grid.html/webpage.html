@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+            border: 5px solid aquamarine;
+            /* background-color: rgb(159, 228, 75); */
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            grid-template-rows:repeat(4,auto);
+            /* grid-row-gap: 5px;
+            grid-column-gap: 5px; */
+            /* height: 300px; */
+        }
+        .one{
+            grid-column: 1/5;
+            grid-row: 1/2;
+            text-align: center;
+            background-image:linear-gradient(45deg,rgb(172, 238, 172),rgb(69, 143, 143),rgb(172, 238, 172) ,rgb(69, 143, 143)) ;
+        }
+        .two{
+            grid-row: 2/3;
+            grid-column: 1/5;
+            background: linear-gradient(45deg,yellow,aquamarine,yellow);
+            height: 50px;
+            text-align: center;
+        }
+        .two>h5{
+            display: flex;
+            flex-direction:column;
+        
+        }
+        
+        .three{
+            grid-row: 3/4;
+            grid-column: 1/2;
+            background-image: linear-gradient(90deg,rgb(230, 151, 151),white,rgb(230, 151, 151));
+        }
+        .four{
+            grid-column: 2/5;
+            grid-row: 3/4;
+            
+        }
+        .five{
+            grid-column: 1/5;
+            grid-row: 4/5;
+            background-image: linear-gradient(90deg,rgb(54, 142, 54),white,rgb(54, 142, 54));
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child one">
+            <h1>Tollywood heros</h1>
+        </div>
+        <div class="child two"> 
+            <h5>Jr Ntr Prabhas Ramcharan Alluarjun PawanKalyan Raviteja</h5></div>
+        <div class="child three">
+            <h5>Jr Ntr Prabhas Ramcharan Alluarjun PawanKalyan Raviteja</h5></div>
+        <div class="child four"><article>
+            <h3>Jr Ntr</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quos sint recusandae quia consequuntur reprehenderit corrupti cumque aut? Totam aut qui quasi hic, incidunt labore iure minima neque eaque architecto!</p>
+        </article>
+        <article>
+            <h3>Prabhas</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quos sint recusandae quia consequuntur reprehenderit corrupti cumque aut? Totam aut qui quasi hic, incidunt labore iure minima neque eaque architecto!</p>
+        </article>
+        <article>
+            <h3>Ramcharan</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quos sint recusandae quia consequuntur reprehenderit corrupti cumque aut? Totam aut qui quasi hic, incidunt labore iure minima neque eaque architecto!</p>
+        </article>
+        <article>
+           <h3>AlluArjun</h3>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quos sint recusandae quia consequuntur reprehenderit corrupti cumque aut? Totam aut qui quasi hic, incidunt labore iure minima neque eaque architecto!</p>
+       </article><article>
+           <h3>Pawan Kalyan</h3>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quos sint recusandae quia consequuntur reprehenderit corrupti cumque aut? Totam aut qui quasi hic, incidunt labore iure minima neque eaque architecto!</p>
+       </article><article>
+           <h3>Ravi Teja</h3>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quos sint recusandae quia consequuntur reprehenderit corrupti cumque aut? Totam aut qui quasi hic, incidunt labore iure minima neque eaque architecto!</p>
+       </article></div>
+        <div class="child five"> Developed by Praveenkumar</div>
+        
+    </div>
+</body>
+</html>

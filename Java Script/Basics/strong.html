@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    let num = Number(prompt('enter number')) 
+    let sum = 0;
+    let res=num;
+    while (num != 0) {
+        let ld = num % 10;
+        let fact = 1;
+        for (let i = 1; i <= ld; i++)
+            fact *= i;
+    
+        sum += fact;
+        num = Math.trunc(num / 10);
+    }
+    if (sum == res )
+    { console.log('strong')
+    }
+    else
+    {console.log('not')}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

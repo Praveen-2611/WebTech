@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;  
+            border: 2px solid black;        
+            grid-template-rows: repeat(4,auto);
+            grid-template-columns: repeat(4,auto);
+            background-color: brown;
+            height: 400px;
+            /* width: 400px; */
+            grid-row-gap: 5px;
+            grid-column-gap: 5px;
+            
+        }
+        .child{
+            background-color:aqua;
+            color:black;
+        }
+        .one{
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+        .five{
+            grid-column: 2/4;
+            grid-row: 2/3;
+        }
+        .six{
+            grid-column: 4/5;
+            grid-row: 2/4;
+        }
+        .seven{
+            grid-column: 1/3;
+            grid-row: 3/4;
+        }
+        .ten{
+            grid-column: 2/4;
+            grid-row: 4/5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child one">item1</div>
+        <div class="child two">item2</div>
+        <div class="child three">item3</div>
+        <div class="child four">item4</div>
+        <div class="child five">item5</div>
+        <div class="child six">item6</div>
+        <div class="child seven">item7</div>
+        <div class="child eight">item8</div>
+        <div class="child nine">item9</div>
+        <div class="child ten">item10</div>
+        <div class="child eleven">item11</div>
+    </div>
+    
+</body>
+</html>
+
+
